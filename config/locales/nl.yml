@@ -1,0 +1,112 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+nl:
+  home:
+    nav:
+      about: "Over"
+      services: "Diensten"
+      work: "Portfolio"
+      contact: "Contact"
+
+    heading:
+      description: "Op zoek naar een"
+      vowel: ""
+      key: "schitterende"
+
+    services:
+      title: "Wij Kunnen Helpen!"
+      service1: "Landings Pagina's"
+      description1: "Onze prachtig ontworpen landings pagina's zijn responsief, mobiel-vriendelijk en W3C gevalideerd. Ze zullen gegarandeerd de aandacht van uw klanten opvangen (en ook hun email!)"
+      service2: "Websites Op Maat"
+      description2: "Met onze web-deskundigheid maken we een mooie website of een complexe applicatie die aan al uw wensen voldoet. Van login tot content management - we kunnen het allemaal!"
+      service3: "PSD/Sketch Naar Html"
+      description3: "Of het nu een afbeelding, photoshop/sketch-bestand is of een simpele link, we zullen het omzetten naar mooie HTML5, CSS3 en JavaScript."
+      service4: "Persoonlijke Service"
+      description4: "Wij bieden persoonlijke service op maat, aan elke klant. Op deze manier kunnen we klanttevredenheid garanderen!"
+      button: "Zie Ons Werk ⇩"
+
+    work:
+      title: "Onze Magie"
+      button: "Zie Alles ⇨"
+
+    reviews:
+        title: "Recensies"
+
+    contact:
+      title: "Contact"
+      name: "Volledige Naam"
+      email: "Email"
+      tel: "Telefoon (Optioneel)"
+      message: "Bericht"
+      send: "VERSTUUR"
+
+  index:
+    title: "Alle Projecten"
+
+  show:
+    home: "Home"
+    projects: "Projecten"
+    description: "Beschrijving"
+    features: "Details"
+    button: "Zie Project ⇨"
+
+  legal:
+    title: "Algemene Voorwaarden"
+
+  about:
+    title: "Over TrueTech"
+    description1: "Hey, ik ben Simon - oprichter van TrueTech, fanatiek boekenlezer, blogger en full-stack web-ninja. Ik heb deze organisatie uitgebouwd om zaakvoerders van regio Mechelen/Antwerpen te helpen hun online aanwezigheid aan te scherpen en zo meer klanten aan te trekken voor hun zaak." 
+    description2: "Met mijn uitgebreide web-expertise bied ik weboplossingen op maat aan, voor elk budget! Bent u op zoek naar een professionele, moderne oplossing waarmee u de aandacht van uw klanten trekt en de competitie gegarandeerd van de kaart veegt? Dan bent u aan het juiste adres!"
+    days: "Ma-Za, 09:00 -> 19:00"
+
+  services:
+    learn: "Leer meer ⇨"
+    title1: "Landings-pagina"
+    title2: "Website Op Maat"
+    title3: "PSD Naar HTML"
+    subtitle1: "Wat kunnen we doen voor u?"
+    subtitle2: "Hoe?"
+    how_html: "Om oplossingen <strong>op maat</strong> te kunnen bieden aan onze klanten volgen we steeds onderstaand proces om tot <strong>optimale resultaten</strong> te komen. Van kennismaking tot eindafwerking biedt TrueTech <strong>persoonlijke begeleiding!</strong>"
+    meett: "Kennismaking"
+    meetd: "In de eerste fase zitten we samen voor een persoonlijk gesprek (of skypegesprek) om alle details te verduidelijken - volledig vrijblijvend."
+    designd: "Als we een overeenkomst kunnen maken, werken we het design uit en sturen deze door voor feedback & aanpassingen."
+    uitwd: "Als we een overeenkomst kunnen maken, werken we het design uit in HTML & CSS en sturen deze door voor feedback & aanpassingen!"
+    codingd: "Als het design éénmaal goedgekeurd is, wordt het project verder uitgewerkt."
+    launcht: "Lancering & nazorg"
+    launchd: "Na de lancering worden eventuele instructies duidelijk gemaakt & ook na afwerking van het project blijven we bereikbaar voor eventuele aanpassingen."
+    nazorgt: "Nazorg"
+    nazorgd: "Na de afwerking van het project blijven we bereikbaar voor eventuele aanpassingen!"
+    specific_html: "Heeft u iets specifieker nodig? <a class='small special' href='#contact'><strong>Contacteer ons</strong></a> gerust voor een persoonlijk verzoek!"
+    landing:
+      p1_html: "Op zoek naar een <strong>professionele landings-pagina </strong>die je bezoekers warm maakt voor jou nieuwe product of dienst?"
+      p2_html: "Hiervoor biedt TrueTech geoptimaliseerde landings-pagina's <strong>op maat</strong> aan! Een opvallende, overzichtelijke pagina waarmee u de aandacht van uw bezoekers trekt en & hun optimaal converteert tot mogelijke klant!"
+      p3_html: "Wij bieden u een <strong>unieke pagina</strong> met snelle laadtijd, persoonlijk design, mobiel-vriendelijke layout & makkelijke vindbaarheid in Google!"
+    website:
+      p1_html: "Voor zaakvoerders die hun <strong>online aanwezigheid</strong> willen uitbouwen om meer klanten aan te trekken, biedt TrueTech websites op maat aan. Een opvallende, professionele website waarmee u de aandacht van uw klanten trekt en de concurrentie doet verbleken!"
+      p2_html: "Voor vele klanten is jou website de <strong>eerste indruk</strong> van je bedrijf en meestal kan één enkele oogopslag bepalen of ze voor jou organisatie kiezen of niet."
+      p3_html: "Bent u op zoek naar een <strong>professioneel imago</strong>? Een gebruiksvriendelijke website die afgesteld is op jou noden? Kijk niet verder!"
+      p4_html: "Wij bieden u een hoge laadsnelheid, persoonlijk design, mobiel-vriendelijke layout, makkelijke vindbaarheid in Google & een eenvoudige manier om jou website te beheren!"
+    conversion:
+      p1_html: "Op zoek naar een <strong>professionele omzetting</strong> van uw sketch/psd design naar moderne HTML & CSS die geoptimaliseerd is voor elk scherm?"
+      p2_html: "Hiervoor biedt TrueTech haar expertise aan! We zorgen ervoor dat u pagina responsief is, goed werkt in elke browser en natuurlijk een perfecte kopie is van het design!"
+      p3_html: "Verder geven we ook een aantal <strong>persoonlijke tips</strong> om de pagina hoger te laten ranken in google, door de afbeeldingen, titels & beschrijvingen te voorzien van de juiste zoektermen!"
+

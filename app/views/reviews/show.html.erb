@@ -1,0 +1,21 @@
+<section id="work">
+<header style="background-color: #314268;">
+  <nav class="effect nav-collapse">
+      <ul id="menu">
+          <li><%= link_to "Home", root_path %></li>
+          <li><a class="effect work" href="#work">Contact</a></li>
+      </ul>
+  </nav>
+</header>
+
+<h2 class="show">Review</h2>
+
+<p>
+  <%= @review.quote %> - <strong><%= @review.name %></strong>
+</p>
+<br/>
+
+<%= link_to 'Edit', edit_review_path(@review) %> |
+<%= link_to 'Back', reviews_path %>
+
+</section>

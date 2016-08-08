@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="author" content="Simon Somlai" />
+	<%= favicon_link_tag 'favicon.ico' %>
+	<title><%= yield(:title) %></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="description" content="<%= yield(:description) %>"/>
+	<meta name="keywords" content="webdesign, webdesign mechelen, webdesign antwerpen, webdesign brussel, web design, webontwikkeling, webdesign bedrijf, webdesigner, webdesigners, professionele website, professioneel webdesign, truetech webdesign, internet webdesign" />
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+	<%= csrf_meta_tags %>
+	<%= stylesheet_link_tag 'reset' %>
+	<%= stylesheet_link_tag 'lightbox' %>
+	<%= stylesheet_link_tag 'unslider-dots' %>
+	<%= stylesheet_link_tag 'unslider' %>
+	<%= stylesheet_link_tag 'mobile/mobile' %>
+</head>
+<body>
+	<img alt="TrueTech Webdesign Mechelen Navigation" src="<%= asset_path('nav.png') %>" height="150" width="150" class="nav"/>
+	<img alt="TrueTech Webdesign Mechelen Top" src="<%= asset_path('top.png') %>" height="150" width="150" class="top"/>
+	<ul class="language">
+		<li><%= link_to image_tag("en.png", :alt => "TrueTech Webdesign Mechelen - English"), locale: "en" %></li>
+		<li><%= link_to image_tag("nl.png", :alt => "TrueTech Webdesign Mechelen - Nederlands"), locale: "nl" %></li>
+	</ul>
+
+<%= yield %>
+
+ <!-- CONTACT SECTION -->
+	<section id="contact" class="cf">
+	    <h2 class="rightfade">
+	    <%= t "home.contact.title"%>
+	    </h2>
+	    <p class="tel leftfade"><a href="tel:+32496427559">(+32) 496 42 75 59</a></p>
+	    <div id="form-main" class="fade">
+	        <div id="form-div">
+                <%= render :partial => 'contacts/form' %>
+	        </div>
+	    </div>
+	</section>
+
+    <footer id="social">
+        <a href="https://www.facebook.com/TrueTech-1502842360023086/"><img alt="TrueTech Webdesign Mechelen Facebook" src="<%= asset_path('facebook-square.png') %>" height="50" width="50" alt=""></a>
+        <a href="https://www.linkedin.com/in/simon-somlai-27a4648a?trk=nav_responsive_tab_profile_pic"><img alt="TrueTech Webdesign Mechelen LinkedIn" src="<%= asset_path('linkedin.png') %>" height="50" width="50" alt=""></a>
+        <a href="https://twitter.com/BasicGrowth"><img alt="TrueTech Webdesign Mechelen Twitter" src="<%= asset_path('twitter.png') %>" height="50" width="50" alt=""></a>
+		<p> 
+			<% if logged_in? %>
+			<%= current_user.username %> |
+			<%= link_to "Logout", logout_path, :class => "button" %>
+			<% end -%>
+		</p>
+		<p style: "float: right">
+		<% if I18n.locale == :nl %>
+		<%= link_to (t "legal.title"), :controller => :pages, :action => :legal %>
+		<% end -%>
+		</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.0.9/scrollreveal.min.js"></script>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <script>
+      tinymce.init({
+        selector: '#project_description'
+      });
+	</script>
+	<script>
+      tinymce.init({
+        selector: '#project_endescription'
+      });
+	</script>
+</body>
+
+</html>
+

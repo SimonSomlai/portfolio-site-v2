@@ -1,0 +1,37 @@
+<%= content_for(:title, "TrueTech | Webdesign Mechelen - " + t("index.title"))  %>
+ <% content_for :description, "TrueTech | Webdesign Mechelen. Op deze pagina vindt u een overzicht van al onze webdesign, webontwikkeling, webshop en andere projecten" %>
+<header style="background-color: #314268;">
+  <nav class="effect nav-collapse">
+      <ul id="menu">
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to (t "home.nav.about"), about_path, :class => "about" %></li>
+          <li><a class="effect work" href="#work">Contact</a></li>
+      </ul>
+  </nav>
+</header>
+
+<!--  WORK SECTION -->
+<section id="work" class="cf">
+  <h2 class="leftfade show">
+    <%= t "index.title" %>
+  </h2>
+  <% if logged_in? %>
+  <%= link_to 'New Project', new_project_path, :class => 'button new' %>
+  <% end %>
+  <% @projects.each do |project| %>
+            <div class="projects fade">
+            <%= link_to direct_path(project) do %>
+            <img alt="TrueTech Webdesign Mechelen - <%= project.title %>" src="<%= image_path(project.image1.url :large)%>"/>
+            <% end %>
+            <%= link_to direct_path(project) do %>
+                <div class="hover">
+                    <h5><%= project.title %></h5>
+                    <h6><%= project.subtitle %></h6>
+                </div>
+            <% end %>
+            </div>
+        <% end %>
+
+<%= will_paginate @projects %>
+
+</section>

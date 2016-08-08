@@ -1,0 +1,15 @@
+<section id="work">
+<header style="background-color: #314268;">
+  <nav class="effect nav-collapse">
+      <ul id="menu">
+          <li><%= link_to "Home", root_path %></li>
+          <li><a class="effect work" href="#work">Contact</a></li>
+      </ul>
+  </nav>
+</header>
+
+<h2 class="show">Editing Project</h2>
+<%= render 'form' %>
+
+<%= link_to 'Back', projects_path, :class => "button" %>
+</section>

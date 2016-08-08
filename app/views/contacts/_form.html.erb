@@ -1,0 +1,23 @@
+<%= form_for Contact.new do |f| %>
+<p class="name">
+	<%= f.text_field :name, required: true, :placeholder => (t "home.contact.name"), :class => "validate[required,custom[onlyLetter],length[0,100]] feedback-input" %>
+</p>
+<p class="email">
+	<%= f.email_field :email, required: true, :placeholder => (t "home.contact.email"), :class => "feedback-input"  %>
+</p>
+<p class="name">
+	<%= f.telephone_field :phone, :class => "feedback-input", :placeholder => (t "home.contact.tel") %>
+</p>
+<p class="text">
+    <%= f.text_area :message, as: :text, required: true,:placeholder => (t "home.contact.message"), :class => "feedback-input" %>
+</p>
+<p class="hidden">	  
+	<%= f.label :nickname %><br/>
+	<%= f.text_field :nickname, hint: "Leave this blank - anti-spam" %>
+</p>
+
+<div class="submit">
+    <input type="submit" value="<%= t "home.contact.send"%>" id="button-blue">
+    <div class="ease"></div>
+</div>
+<% end -%>

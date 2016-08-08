@@ -1,0 +1,112 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  home:
+    nav:
+      about: "About"
+      services: "services"
+      work: "work"
+      contact: "contact"
+
+    heading:
+      description: "Looking for a"
+      vowel: "n"
+      key: "stunning"
+
+    services:
+      title: "We Can Help!"
+      service1: "Custom Landing Pages"
+      description1: "Our beautifully designed landing pages are responsive, mobile friendly and W3C validated. Surely to catch your customers' attention (and email!)"
+      service2: "Personalized Website"
+      description2: "With our web developing expertise we'll build a beautiful site or a complex app that'll be sure to satisfy all your needs. From login to content management - we got it"
+      service3: "PSD/Sketch To Html"
+      description3: "Whether it's an image, photoshop/sketch file or a simple link - we'll convert it to beautiful HTML5, CSS3 & JavaScript."
+      service4: "Personal Service"
+      description4: "We provide tailor-made personal service to each costumer. This way we can guarantee customer satisfaction!"
+      button: "See Our Work ⇩"
+
+    work:
+      title: "Our Magic"
+      button: "See All ⇨"
+
+    reviews:
+        title: "Reviews"
+
+    contact:
+      title: "Contact us"
+      name: "Full Name"
+      email: "Email"
+      tel: "Telephone (Optional)"
+      message: "Message"
+      send: "SEND"
+
+  index:
+    title: "All Projects"
+
+  show:
+    home: "Home"
+    projects: "Projects"
+    description: "Description"
+    features: "Details & Features"
+    button: "See Project ⇨"
+
+  legal:
+    title: "Terms Of Service"
+
+  about:
+    title: "About TrueTech"
+    description1: "Hey, I'm Simon - founder of TrueTech, compulsive reader of books, blogger & full-stack web-ninja. I've started this company to help my clients improve their online presence and attract more customers."
+    description2: "With my expansive web-experience I'm able to offer custom web-solutions for every budget. Do you need a professional, modern solution to attract more customers and outshine your competition? Then you've come to the right place!"
+    days: "Mo-Sa, 9AM -> 7PM"
+
+  services:
+    learn: "Learn more ⇨"
+    title1: "Landing Page"
+    title2: "Customized Website"
+    title3: "PSD To HTML"
+    subtitle1: "What can we do for you?"
+    subtitle2: "How?"
+    how_html: "To provide <strong>customized, professional solutions</strong> for each client we always follow the underlying process. This allows us to <strong>optimize</strong> the project from start to finish!"
+    meett: "Meeting"
+    meetd: "In the first phase we'll have a thorough conversation to iron out all the details - completely free of charge!"
+    designd: "Once we've made an agreement, we'll start working on the design and send it to you for feedback & adjustments!"
+    uitwd: "Once we've made an agreement, we'll start converting the design to HTML & CSS and will send this to you for feedback & adjustments"
+    codingd: "When the final design is approved, we'll start coding the functionality!"
+    launcht: "Launch & aftercare"
+    launchd: "After the launch we'll go over the specific instructions (if applicable) & we stay in touch for possible adjustments!"
+    nazorgt: "Aftercare"
+    nazorgd: "After the launch we'll stay in touch for possible adjustments!"
+    specific_html: "Are you looking for something more specific? <a class='small special' href='#contact'><strong>Challenge us</strong></a> with your special request!"
+    landing:
+      p1_html: "Are you looking for a <strong>professional landing page</strong> to excite your visitors for your new product or service?"
+      p2_html: "Look no further! We can build you a <strong>striking, uncluttered page </strong>that'll attract the attention of your visitors & optimize conversion rates!"
+      p3_html: "We offer a <strong>unique page</strong> with a fast load time, personal design and a mobile-friendly layout which will surely rank high in google!"
+    website:
+      p1_html: "For business owners who want to <strong>improve their online presence</strong> & attract more customers, TrueTech offers tailor-made websites! A striking, professional website that'll attract the attention of your customers and blow away the competition!"
+      p2_html: "For many clients your website is your <strong>first impression</strong> and can determine whether they choose for your organization or not. So make it a good one!"
+      p3_html: "Are you looking for a <strong>professional image</strong>? A user-friendly website that is adjusted to you needs? Look no further!"
+      p4_html: "We offer a fast load-time, personal design, mobile-friendly layout, easy visibility in Google and a simple way to manage you website!"
+    conversion:
+      p1_html: "Looking for a <strong>professional conversion</strong> of your sketch/psd design to modern HTML & CSS?"
+      p2_html: "For this, TrueTech offers its expertise! We ensure that you'll get a identical, responsive page, optimized for all screens and compatible with all modern browsers!"
+      p3_html: "We also give some <strong>personal tips</strong> to get a higher page rank in Google. By optimizing the images, titles and descriptions with the right keywords!"
+

@@ -1,0 +1,79 @@
+ <%= content_for(:title, "TrueTech | Webdesign Mechelen - PSD To HTML")  %>
+  <% content_for :description, "PSD To HTML | Webdesign Mechelen" %>
+  <% content_for :head do %>
+  <%= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' %>
+<% end %>
+
+<!--  HEAD SECTION  -->
+        <header style="background-color: #314268;">
+            <nav class="services effect nav-collapse">
+                <ul id="menu">
+                    <li><%= link_to (t "show.home"), root_path %></li>
+                    <li><%= link_to (t "home.nav.about"), about_path, :class => "about" %></li>
+                    <li><a class="effect contact" href="#contact"><%= t "home.nav.contact" %></a></li>
+                </ul>
+            </nav>
+        </header>
+
+<section class="what conversion">
+    <div class="container">
+        <div class="row">
+            <h2 class="leftfade text-center"><%= t "services.title3" %></h2>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <h3 class="leftfade"><%= t "services.subtitle1" %></h3>
+            <p class="leftfade"><%= t "services.conversion.p1_html" %></p>
+            <p class="leftfade"><%= t "services.conversion.p2_html" %></p>
+            <p class="leftfade"><%= t "services.conversion.p3_html" %></p>
+            <p class="leftfade"><%= t "services.specific_html" %></p>
+            </div>
+             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+             <img alt="TrueTech | Webdesign Mechelen - Website Op Maat" src="<%= asset_path('psd.png') %>" class="rightfade img-responsive center-block">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="how conversion process-v1 bg-color-light">
+            <div class="container content-sm">
+                <div class="headline-center margin-bottom-60">
+                    <h2 class="leftfade"><%= t "services.subtitle2" %></h2>
+                    <p class="rightfade how howdisplay"><%= t "services.how_html" %></p>
+                </div>
+                <ul class="fadein list-inline row process-in process-border">
+                    <li class="col-sm-4 sm-margin-bottom-50">
+                        <div class="process-icon">
+                        <a class="hvr-ripple-out" href="#">
+                            <i class="rounded-x dot-active"></i>
+                            </a>
+                        </div>
+                        <div class="process-desc">
+                            <h3><%= t "services.meett" %></h3>
+                            <p><%= t "services.meetd" %></p>
+                        </div>
+                    </li>
+                    <li class="col-sm-4 sm-margin-bottom-50">
+                        <div class="process-icon">
+                        <a class="hvr-ripple-out" href="#">
+                            <i class="rounded-x dot-active"></i>
+                            </a>
+                        </div>
+                        <div class="process-desc">
+                            <h3>Coding</h3>
+                            <p><%= t "services.uitwd" %></p>
+                        </div>
+                    </li>
+                    <li class="col-sm-4">
+                        <div class="process-icon">
+                        <a class="hvr-ripple-out" href="#">
+                            <i class="rounded-x dot-active"></i>
+                        </a>
+                        </div>
+                        <div class="process-desc">
+                            <h3><%= t "services.nazorgt" %></h3>
+                            <p><%= t "services.nazorgd" %></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+

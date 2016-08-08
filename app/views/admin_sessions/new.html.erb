@@ -1,0 +1,32 @@
+<section id="work">
+<header style="background-color: #314268;">
+  <nav class="effect nav-collapse">
+      <ul id="menu">
+          <li><%= link_to "Home", root_path %></li>
+          <li><a class="effect work" href="#work">Contact</a></li>
+      </ul>
+  </nav>
+</header>
+
+<h2 class="show">Login</h2>
+	
+<%= form_tag admin_sessions_path, method: :post do %>
+
+<div class="field">
+    <%= label_tag :email %><br>
+    <%= text_field_tag :email %>
+</div>
+
+<div class="field">
+    <%= label_tag :password %><br>
+    <%= password_field_tag :password %>
+</div>
+
+  <div class="field">
+    <%= submit_tag "Login" %>
+  </div>
+  <% end -%>
+
+<%= link_to 'Back', projects_path, :class => "admin" %>
+
+</section>

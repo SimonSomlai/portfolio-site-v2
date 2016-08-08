@@ -1,0 +1,31 @@
+<section id="work">
+<header style="background-color: #314268;">
+  <nav class="effect nav-collapse">
+      <ul id="menu">
+          <li><%= link_to "Home", root_path %></li>
+          <li><a class="effect work" href="#work">Contact</a></li>
+      </ul>
+  </nav>
+</header>
+
+<h2 class="show">Admins</h2>
+
+<table>
+  <tbody>
+    <% @admins.each do |admin| %>
+      <tr>
+        <td><%= admin.username %></td>
+        <td><%= admin.email %></td>
+        <td><%= link_to 'Show', admin %></td>
+        <td><%= link_to 'Edit', edit_admin_path(admin) %></td>
+        <td><%= link_to 'Destroy', admin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Admin', new_admin_path, :class => "button" %>
+
+</section>

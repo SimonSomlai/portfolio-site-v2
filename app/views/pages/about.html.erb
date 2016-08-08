@@ -1,0 +1,90 @@
+ <%= content_for(:title, "TrueTech | Webdesign Mechelen - Over TrueTech")  %>
+  <% content_for :description, "Meer informatie over TrueTech | Webdesign Mechelen" %>
+<!--  HEAD SECTION  -->
+        <header style="background-color: #314268;">
+            <nav class="effect nav-collapse">
+                <ul id="menu">
+                    <li><%= link_to (t "show.home"), root_path %></li>
+                    <li><a class="effect contact" href="#contact"><%= t "home.nav.contact" %></a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+<section id="work"  class="aboutpage cf">
+    <h2 class="leftfade show about"><%= t "about.title" %></h2>
+
+    <hr class="aboutmepage"/>
+    
+    <div class="aboutme">
+        <%= image_tag("about.JPG", :class => "leftfade", :alt => "Trutech | Webdesign Mechelen - Futura Webdesign Antwerpen") %>
+        <div class="aboutdetails">
+            <h3 class="fade">Simon Somlai</h3>
+            <h4 class="fade">Web Developer</h4>
+            <p class="fade"><%= t "about.description1" %></p>
+            <p class="fade"> <%= t "about.description2" %></p>
+            <div class="skills fade">
+                <h5>HTML5 - <span class="counter">78</span>%<span class="hidden">78</span></h5>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-dark">
+                    </div>
+                </div>
+            </div>
+            <div class="skills fade">
+                <h5>CSS3 - <span class="counter">85</span>%<span class="hidden">85</span></h5>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-dark">
+                    </div>
+                </div>
+            </div> 
+            <div class="skills fade">
+                <h5>JavaScript/JQuery - <span class="counter">80</span>%<span class="hidden">80</span></h5>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-dark">
+                    </div>
+                </div>
+            </div>
+            <div class="skills fade ">
+                <h5>Ruby - <span class="counter">76</span>%<span class="hidden">76</span></h5>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-dark">
+                    </div>
+                </div>
+            </div>
+            <div class="skills fade">
+                <h5>Rails - <span class="counter">73</span>%<span class="hidden">73</span></h5>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-dark">
+                    </div>
+                </div>
+            </div>
+            <div class="skills fade">
+                <h5>Magic - <span class="counter">100</span>%<span class="hidden">100</span></h5>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-dark">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="quote">
+        <p>“Success is in the system you use - Figure out how to do something once & then repeat it throughout your life.“</p>
+        <%= image_tag("futura.png", :alt => "Trutech | Webdesign Mechelen - Futura Webdesign Antwerpen") %>
+    </div>
+
+    <iframe class="map leftfade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.4001396920826!2d4.570219715243897!3d51.064163150835114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3e314800556bf%3A0x10d5d0b19411e6a8!2sKerkhoflei+5%2C+2861+Sint-Katelijne-Waver!5e0!3m2!1sen!2sbe!4v1457488209899" width="47%" height="410" frameborder="0" allowfullscreen></iframe>
+
+    <div class="information">
+        <ul>
+            <li class="fadedelay address">Kerkhoflei 5, 2861 OLV-Waver</li>
+            <li class="fadedelay telephone">(+32) 496 42 75 59</li>
+            <li class="fadedelay onderneming">0647.937.729</li>
+            <li class="fadedelay bank">BE20 7795 9552 4056</li>
+            <li class="fadedelay hours"><%= t "about.days" %></li>
+        </ul>
+    </div>
+
+
+
+    </section>

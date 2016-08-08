@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+<%= content_for(:title, "TrueTech | Webdesign Mechelen - " + @project.title)  %>
+ <% content_for :description, sanitize(@project.description,  tags: []) %>
+  <header style="background-color: #314268;">
+        <nav class="effect nav-collapse">
+            <ul id="menu">
+                <li><%= link_to (t "show.home"), root_path %></li>
+                <li><%= link_to (t "home.nav.about"), about_path, :class => "about" %></li>
+                <li><%= link_to (t "show.projects"), projects_path %></li>
+                <li><a class="effect work" href="#work">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <section id="project">
+
+    <h2 class="leftfade"><%= @project.title %> <span> <%= @project.subtitle %></span></h2>
+    <hr/>
+    <div class="images leftfade">
+        <div class="display">
+            <img alt="TrueTech Webdesign Mechelen - <%= @project.title %>" src="<%= image_path(@project.image1.url :large)%>"/>
+        </div>
+        <ul class="carousel">
+            <li>   <a href="<%= @project.image1.url %>" data-lightbox="<%= @project.title %>"[Project]><img alt="TrueTech Webdesign Mechelen - <%= @project.title %> Image 1" src="<%= image_path(@project.image1.url :large)%>"/></a></li>
+            <li>   <a href="<%= @project.image2.url %>" data-lightbox="<%= @project.title %>"[Project]><img alt="TrueTech Webdesign Mechelen - <%= @project.title %> Image 2" src="<%= image_path(@project.image2.url :large)%>"/></a></li>
+            <li>   <a href="<%= @project.image3.url %>" data-lightbox="<%= @project.title %>"[Project]><img alt="TrueTech Webdesign Mechelen - <%= @project.title %> Image 3" src="<%= image_path(@project.image3.url :large)%>"/></a></li>
+            <li>   <a href="<%= @project.image4.url %>" data-lightbox="<%= @project.title %>"[Project]><img alt="TrueTech Webdesign Mechelen - <%= @project.title %> Image 4" src="<%= image_path(@project.image4.url :large)%>"/></a></li>
+        </ul>
+    </div>
+
+    <div class="details rightfade">
+        <h3><%= t "show.description" %></h3> 
+        <p>
+            <% if I18n.locale == :nl %>
+            <%= raw(@project.description) %>
+            <% elsif I18n.locale == :en %>
+            <%= raw(@project.endescription) %>
+            <% end %>
+        </p>
+        <h3><%= t "show.details" %></h3>
+        <% hash = eval(@project.features) %>
+        <ul>
+            <% hash.each do |k,v| %>
+            <% v = v.gsub(/[_]/, ' ') %>
+                <li><%= "#{v}" %></li>
+            <% end -%>
+        </ul>
+
+        <a href="<%= @project.link %>" class="button" target="_blank"><%= t "show.button" %></a>
+    </div>
+    <% if logged_in? %>
+    <ul class="admin">
+      <li><%= link_to 'Edit', edit_project_path(@project) %></li>
+      <li><%= link_to 'Destroy', @project, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+      <li><%= link_to 'Back', projects_path %></li>
+    </ul>
+    <% end %>
+
+</section>
+
