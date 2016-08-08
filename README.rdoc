@@ -1,28 +1,11 @@
-== README
+<b> Home Page </b>
+http://www.basicgrowth.com/wp-content/uploads/2016/04/TrueTech.png
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<b> About Page </b>
+http://www.basicgrowth.com/wp-content/uploads/2016/04/screencapture-truetech-be-en-about-1459892290535.png
 
-Things you may want to cover:
+<b> Project Detail </b>
+http://www.basicgrowth.com/wp-content/uploads/2016/04/screencapture-truetech-be-en-truetech-1459892314789.png
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+<b> Services Single </b>
+http://www.basicgrowth.com/wp-content/uploads/2016/04/screencapture-truetech-be-en-website-1459892271779.png
